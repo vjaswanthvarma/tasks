@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <form onsubmit="return calculateTotalPrice()"   id="form">
+        <h1>Bill Calculator</h1><br>
+        <label for="pdname" id="pname">ProductName:</label>
+        <input type="text" name="pdname" placeholder="ProductName" id="ProductName" required><br>
+        <label for="pdprice" id="pprice">ProductPrice in Rs:</label>
+        <input type="number" name="pdprice"  placeholder="ProductPrice" id="price" required><br>
+        <label for="pdquantity" id="pquantity">Quantity:</label>
+        <input type="number" name="pdquantity"  placeholder="Productqty" id="qty" min="1" required><br>
+        <label for="value" id="tvalue">Total Price in Rs:</label>
+        <input type="number" id="totalprice" placeholder="totalprice" name="value"  ><br>
+        <input type="submit">
+    </form>
+    <script src="index.js"></script>
+</body>
+</html>
